@@ -3,7 +3,8 @@
 printf "Checking vagrant version..."
 vagrant_version=`vagrant --version`
 
-if test `echo $vagrant_version | grep 'Vagrant 1.7' | wc -l` = 1; then
+#if test `echo $vagrant_version | grep 'Vagrant 1.7' | wc -l` = 1; then
+if test `echo $vagrant_version | grep 'Vagrant 1.8.1' | wc -l` = 1; then
   printf "OK!\n"
 else
   printf "Failed!\n"
